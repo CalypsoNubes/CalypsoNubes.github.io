@@ -10,27 +10,111 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500&display=swap');
+    
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+
+      background: hsl(30, 38%, 92%);
+    }
+
+    .card{
+      width: 600px;
+      height: 450px;
+      display: flex;
+      background: hsl(0, 0%, 100%);
+      border-radius: 10px;
+    }
+
+    img{
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    main{
+      width: 40%;
+      margin: 5%;
+      margin-top: 20px;
+    }
+
+    table{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    p{
+      font-family: 'Montserrat', sans-serif;
+      color: hsl(228, 12%, 48%);
+      font-weight: 500;
+      font-size: 14px;
+      display: flex;
+    }
+
+    s{
+      margin: 0px 15px 0px 0px;
+      color: hsl(228, 12%, 48%);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    h1{
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    button{
+      height: 12%;
+      width: 100%;
+      background: hsl(158, 36%, 37%);
+      color: hsl(0, 0%, 100%);
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      border-radius: 9px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    footer { 
+      font-size: 11px; 
+      text-align: center; 
+      position: fixed;
+      bottom: 0;
+    }
+
+    footer a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <div class="card">
+    <img src="images/image-product-desktop.jpg" alt="" width="50%">
+    <main>
+      <p style="letter-spacing: 5px; font-size: 12px;">PERFUME</p>
 
-  Preview
+      <h1>Gabrielle Essence Eau De Parfum</h1>
 
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <p>
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <table>
+        <tr>
+          <td><h1 style="color: hsl(158, 36%, 37%); margin: 20px 0px 20px 0px;">$149.99</h1></td>
+          <td><s>$169.99</s></td>
+        </tr>
+      </table>
+      <button><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg> &nbsp; Add to Cart</button>
+    </main>
   </div>
+  
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Calypso Nubes</a>.
+  </footer>
 </body>
 </html>
